@@ -1,13 +1,84 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;1,100;1,200&display=swap');
+
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  height: 100vh;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+.wrapper{
+  background-color: #fbfbfb;
+  width: 20rem;
+  padding: 2rem;
+  margin-top: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 40px 14px rgba(0,0,0,0.1);
+}
+
+.screen{
+  height: 4rem;
+  margin-bottom: 4rem;
+}
+
+.buttonbox{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .5rem;
+}
+
+.button{
+  background: #85d04b;
+  height: 3.5rem;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #e9f0f4;
+  border: #242424;
+  font-size: 1.5rem;
+}
+
+.button:hover{
+  background: #e9f0f4;
+  color: #83d04b;
+  border: 2px dotted #83d04b;
+}
+
+.equals{
+  background: #1414e7d2;
+  grid-column: 3/5;
+}
+
+.opt{
+  background: #059ef7;
+}
+
+.c{
+  background: Red;
+  color: black;
+}
+
+.c:hover{
+  color: red;
+  background: white;
+  border: 2px dotted red;
+}
+
+.equals:hover, .opt:hover{
+  background-color: #e9f0f4;
+  color: #242424;
+  border: 2px dotted #059ef7;
+}
+
